@@ -1,0 +1,17 @@
+button {
+  &.hamburger {
+    padding: 0.7rem;
+    background: #0c63df26;
+    border-radius: 0.3rem;
+
+    &.is-active {
+      span.hamburger-inner {
+        background-color: #ffffff;
+
+        &::after {
+          background-color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,5 @@
 $main-color: #0c63df;
 $secondary-color: #2098e3;
-$hamburger-layer-width: 1.5rem;
-$hamburger-layer-color: $main-color;
-
 
 @mixin gradient {
   background: linear-gradient(225deg, #2098e3 0%, #0c63df 100%);
@@ -38,6 +35,7 @@ $hamburger-layer-color: $main-color;
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+    overflow: auto;
 }
 body {
     width: 100%;
