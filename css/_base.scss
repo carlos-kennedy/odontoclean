@@ -1,1 +1,55 @@
-$main-color: ;
+$main-color: #0c63df;
+$secondary-color: #2098e3;
+
+$hamburger-layer-width: 2.5rem;
+// $hamburger-padding-x: 5rem;
+// $hamburger-padding-y: 5rem;
+
+
+@mixin gradient {
+  background: linear-gradient(225deg, #2098e3 0%, #0c63df 100%);
+}
+
+@mixin makeThisFlex($val) {
+  @if $val == center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } @else if $val == column {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+  } @else if $val == between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } @else {
+    display: flex;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+    button{
+        
+        // @include makeThisFlex(center);
+        .hamburger{
+background: gray;
+    padding: 4rem;
+        }
+    }
+
+}
