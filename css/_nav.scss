@@ -1,6 +1,11 @@
 nav#navigation {
+  position: fixed;
+  background: $nav-bg;
+  top: 0;
+  width: 100%;
+  z-index: 100;
   padding-inline: 2.4rem;
-  height: max(8rem);
+  height: $nav-height;
   @include makeThisFlex(between);
 
   svg {
@@ -24,6 +29,7 @@ nav#navigation {
       @include makeThisFlex(column);
       @include gradient;
       position: fixed;
+      z-index: 10;
       width: 100%;
       height: 100%;
       top: 0;

@@ -1,8 +1,19 @@
-$main-color: #0c63df;
 $secondary-color: #2098e3;
+$main-color: #0c63df;
+$nav-bg: #F2F5FA;
+$header-bg: #DAE9F2;
+$color-titles: #020E1FD9;
+$color-texts: #ffffff;
+$color-border-button: #030e1f17;
+$span-background-color: #AAD6F2;
+$nav-height: max(8rem);
 
 @mixin gradient {
   background: linear-gradient(225deg, #2098e3 0%, #0c63df 100%);
+}
+
+@mixin gradient-opacity-low{
+  background: linear-gradient(180deg, #F2F5FA 23.78%, rgba(242, 245, 250, 0) 100%);
 }
 
 @mixin makeThisFlex($val) {
@@ -10,16 +21,24 @@ $secondary-color: #2098e3;
     display: flex;
     align-items: center;
     justify-content: center;
+
   } @else if $val == column {
     display: flex;
     align-items: center;
     flex-flow: column;
     justify-content: center;
+
   } @else if $val == between {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  } @else {
+  }
+    @else if $val == start{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+   @else {
     display: flex;
   }
 }
@@ -32,10 +51,12 @@ $secondary-color: #2098e3;
   list-style: none;
 }
 
+
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
     overflow: auto;
+    text-rendering: optimizeLegibility;
 }
 body {
     width: 100%;

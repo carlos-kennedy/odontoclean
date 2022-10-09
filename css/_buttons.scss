@@ -1,5 +1,6 @@
 button {
   &.hamburger {
+    z-index: 100;
     padding: 0.7rem;
     background: #0c63df26;
     border-radius: 0.3rem;
@@ -13,5 +14,33 @@ button {
         }
       }
     }
+  }
+
+  &.read-m {
+    padding-block: 1rem;
+    padding-inline: 1.6rem;
+    background: transparent;
+    border-radius: 0.3rem;
+    border: 0.1rem solid $color-border-button;
+
+    font-size: clamp(1.5rem, 1.32rem + 0.5vw, 1.8rem);
+    font-weight: 600;
+    color: $main-color;
+    line-height: 1.9rem;
+  }
+
+  &.btn-show-more {
+    @include makeThisFlex(center);
+    padding-inline: 1.6rem;
+    padding-block: 0.8rem;
+    gap: 0.8rem;
+    @include gradient;
+    border: none;
+    border-radius: .3rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $color-texts;
+    cursor: pointer;
   }
 }

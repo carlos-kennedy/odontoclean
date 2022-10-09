@@ -1,5 +1,62 @@
-header{
-    img {
-         width: 100%;
-     }
+header {
+  padding-top: $nav-height;
+  background: $header-bg;
+  img {
+    width: 100%;
+    margin-bottom: 3.3rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .wrapper {
+    @include makeThisFlex(column);
+    align-items: flex-start;
+
+    padding-inline: 2.4rem;
+    padding-bottom: 4.4rem;
+    h2 {
+      font-size: clamp(2.3rem, 2rem + 0.8333vw, 2.8rem);
+      font-weight: 400;
+      line-height: 3.1rem;
+      opacity: 0.69;
+    }
+    h1 {
+      font-size: clamp(2.3rem, 1.04rem + 3.5vw, 4.4rem);
+      color: $color-titles;
+
+      line-height: 4.4rem;
+      span {
+        color: $main-color;
+        background: $span-background-color;
+        border-radius: 0.3rem;
+        padding: 0.5rem;
+      }
+    }
+
+    .contact {
+      @include makeThisFlex(start);
+      gap: 0.7rem;
+      margin-top: 2.2rem;
+      a {
+        &.whatsapp-icon {
+          @include gradient;
+          @include makeThisFlex(start);
+          gap: 0.7rem;
+          padding-inline: 1.4rem;
+          padding-block: 0.7rem;
+          border-radius: 0.3rem;
+          color: $color-texts;
+
+          font-weight: 700;
+          font-size: clamp(1.5rem, 1.32rem + 0.5vw, 1.8rem);
+          line-height: 1.9rem;
+
+          i {
+            font-size: 2rem;
+            background: #f2f5fa26;
+            padding: 0.3rem;
+            border-radius: 0.3rem;
+          }
+        }
+      }
+    }
+  }
 }

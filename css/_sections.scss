@@ -1,0 +1,116 @@
+section {
+  padding-block: 6.4rem;
+  &#differential {
+    .wrapper {
+      @include makeThisFlex(column);
+      gap: 1.6rem;
+      h2 {
+        align-self: flex-start;
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 3.5rem;
+        color: $color-titles;
+      }
+      ul {
+        &.cards {
+          @include makeThisFlex(column);
+          gap: 0.8rem;
+
+          li {
+            @include makeThisFlex(column);
+            padding: 3.2rem;
+            gap: 0.6rem;
+            text-align: center;
+            border-radius: 1rem;
+            border: 0.1rem solid $color-border-button;
+            header {
+              padding: 1.7rem;
+              clip-path: circle();
+            }
+
+            h3 {
+              font-size: clamp(1.6rem, 1.0706rem + 1.4706vw, 2.2rem);
+              line-height: 2.2rem;
+              color: $color-titles;
+            }
+            p {
+              font-size: clamp(1.6rem, 1.0706rem + 1.4706vw, 2.2rem);
+              line-height: 2.2rem;
+              opacity: 0.69;
+            }
+          }
+        }
+      }
+    }
+  }
+  &#treatments {
+    .wrapper {
+      @include makeThisFlex(column);
+      gap: 1.6rem;
+      h2 {
+        align-self: flex-start;
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 3.5rem;
+        color: $color-titles;
+      }
+
+      ul {
+        &.treatments-cards {
+          @include makeThisFlex(column);
+          gap: 1.6rem;
+          header {
+            padding: 0;
+            @include makeThisFlex(start);
+            gap: 0.4rem;
+            margin-bottom: 0.9rem;
+            background: none;
+            input[type="checkbox"] {
+              display: none;
+
+              + label {
+                width: 1.8rem;
+                height: 1.8rem;
+                vertical-align: middle;
+                display: inline-block;
+                border-radius: 0.3rem;
+                background: $main-color;
+                position: relative;
+                &::before {
+                  content: "";
+                  width: 1.65rem;
+                  height: 1.68rem;
+                  background: url(../assets/check-solid.svg) no-repeat center;
+                  top: 0%;
+                  position: absolute;
+                }
+              }
+            }
+
+            h3 {
+              font-size: 2rem;
+              line-height: 2.2rem;
+              color: $color-titles;
+            }
+          }
+          div {
+            &.show-more-list {
+              display: none;
+              &.active {
+                @include makeThisFlex(column);
+                gap: 1.6rem;
+              }
+            }
+          }
+          li {
+            p {
+              font-size: 1.6rem;
+              line-height: 2.2rem;
+              opacity: 0.69;
+            }
+          }
+        }
+      }
+    }
+  }
+}
