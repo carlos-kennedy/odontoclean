@@ -2,7 +2,7 @@ button {
   &.hamburger {
     z-index: 100;
     padding: 0.7rem;
-    background: #0c63df26;
+    background: $hamburguer-icon-bg;
     border-radius: 0.3rem;
 
     &.is-active {
@@ -10,7 +10,7 @@ button {
         background-color: #ffffff;
 
         &::after {
-          background-color: white;
+          background-color: #ffffff;
         }
       }
     }
@@ -36,11 +36,41 @@ button {
     gap: 0.8rem;
     @include gradient;
     border: none;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $color-texts;
     cursor: pointer;
+    i {
+      padding: 0.8rem;
+      background: $i-bg;
+    }
   }
+
+  &.btn-scheduling {
+    margin-top: 1.6rem;
+    padding-block: 0.8rem;
+    padding-inline: 1.6rem;
+    @include makeThisFlex(center);
+    align-self: start;
+    gap: 0.8rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $color-titles;
+    background: $nav-bg;
+    border-radius: 0.3rem;
+    border: none;
+  }
+
+  &.btn-show-text{
+    font-size: 1.6rem;
+  background: #0c63df26;
+padding-inline: .7rem;
+padding-block: 0.6rem;
+border-radius: .3rem;
+border: none;
+color: $main-color;
+}
 }

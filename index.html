@@ -2,20 +2,24 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
+
+    <script src="./slider.js" defer></script>
     <script src="./main.js" defer></script>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Odonto clean - Clínica odontológica</title>
 </head>
 
@@ -48,29 +52,19 @@
 
         <ul class="nav-list">
             <li>
-                <a href="#">
-                    Home
-                </a>
+                <a href="#"> Home </a>
             </li>
             <li>
-                <a href="#">
-                    Sobre
-                </a>
+                <a href="#"> Sobre </a>
             </li>
             <li>
-                <a href="#">
-                    Profissionais
-                </a>
+                <a href="#"> Profissionais </a>
             </li>
             <li>
-                <a href="#">
-                    Tratamentos
-                </a>
+                <a href="#"> Tratamentos </a>
             </li>
             <li>
-                <a href="#">
-                    Dúvidas
-                </a>
+                <a href="#"> Dúvidas </a>
             </li>
         </ul>
 
@@ -82,7 +76,8 @@
     </nav>
 
     <header>
-        <img src="./assets/Rectangle 80.png" alt="Dentista-olhando-para-o-espelho-na-mão-do-paciente-sorridente." />
+        <img src="./assets/Dentist-looking-at-mirror-on-smiling-patient's-hand.png"
+            alt="Dentist-looking-at-mirror-on-smiling-patient's-hand." />
         <div class="wrapper">
             <h2>20 Anos de experiência</h2>
             <h1>Realizando sonhos de um <span>Sorriso Perfeito!</span></h1>
@@ -92,9 +87,7 @@
                     <i class="fa-brands fa-whatsapp"></i> Entre em contato
                 </a>
 
-                <button class="read-m">
-                    Saiba mais
-                </button>
+                <button class="read-m">Saiba mais</button>
             </div>
         </div>
     </header>
@@ -102,9 +95,7 @@
     <main>
         <section id="differential">
             <div class="wrapper">
-                <h2>
-                    Diferencial
-                </h2>
+                <h2>Diferencial</h2>
 
                 <ul class="cards">
                     <li>
@@ -131,8 +122,10 @@
                             </svg>
                         </header>
                         <h3>Profissionais Capacitados</h3>
-                        <p>Nossa equipe de dentistas e assistentes é formada apenas por profissionais altamente
-                            qualificados.</p>
+                        <p>
+                            Nossa equipe de dentistas e assistentes é formada apenas por
+                            profissionais altamente qualificados.
+                        </p>
                     </li>
 
                     <li>
@@ -163,8 +156,10 @@
                         </header>
 
                         <h3>Horários flexíveis</h3>
-                        <p>A marcação de consultas e exames pode ser feita de acordo com o melhor horário para os nossos
-                            pacientes.</p>
+                        <p>
+                            A marcação de consultas e exames pode ser feita de acordo com o
+                            melhor horário para os nossos pacientes.
+                        </p>
                     </li>
 
                     <li>
@@ -194,7 +189,10 @@
                             </svg>
                         </header>
                         <h3>Tratamento personalizado</h3>
-                        <p>Cada paciente é recebido de forma única e seu conforto é uma prioridade para nós.</p>
+                        <p>
+                            Cada paciente é recebido de forma única e seu conforto é uma
+                            prioridade para nós.
+                        </p>
                     </li>
 
                     <li>
@@ -227,8 +225,10 @@
                             </svg>
                         </header>
                         <h3>Solicite um orçamento</h3>
-                        <p>Nossa equipe de dentistas e assistentes é formada apenas por profissionais altamente
-                            qualificados.</p>
+                        <p>
+                            Nossa equipe de dentistas e assistentes é formada apenas por
+                            profissionais altamente qualificados.
+                        </p>
                     </li>
 
                     <li>
@@ -264,8 +264,10 @@
                             </svg>
                         </header>
                         <h3>Trabalho em equipe</h3>
-                        <p>A marcação de consultas e exames pode ser feita de acordo com o melhor horário para os nossos
-                            pacientes.</p>
+                        <p>
+                            A marcação de consultas e exames pode ser feita de acordo com o
+                            melhor horário para os nossos pacientes.
+                        </p>
                     </li>
 
                     <li>
@@ -289,85 +291,443 @@
                             </svg>
                         </header>
                         <h3>Higiene e segurança</h3>
-                        <p>Cada paciente é recebido de forma única e seu conforto é uma prioridade para nós.</p>
+                        <p>
+                            Cada paciente é recebido de forma única e seu conforto é uma
+                            prioridade para nós.
+                        </p>
                     </li>
                 </ul>
             </div>
         </section>
+
         <section id="treatments">
             <div class="wrapper">
                 <h2>Tratamentos</h2>
                 <ul class="treatments-cards">
                     <li>
                         <header>
-                            <input type="checkbox" id="treatments">
+                            <input type="checkbox" id="treatments" />
                             <label for="treatments"></label>
                             <h3>Implantodologia</h3>
                         </header>
-                        <p>O tratamento com implantes dentários visa substituir ou repor dentes perdidos por
-                            parafusos de titânio que funcionam como substitutos das raízes dos dentes. O tratamento
-                            é extremamente seguro e com altíssimo índice de sucesso, desde que seja realizado por
-                            profissional capacitado.</p>
+                        <p>
+                            O tratamento com implantes dentários visa substituir ou repor
+                            dentes perdidos por parafusos de titânio que funcionam como
+                            substitutos das raízes dos dentes. O tratamento é extremamente
+                            seguro e com altíssimo índice de sucesso, desde que seja
+                            realizado por profissional capacitado.
+                        </p>
                     </li>
 
                     <li>
                         <header>
-                            <input type="checkbox" id="treatments">
+                            <input type="checkbox" id="treatments" />
                             <label for="treatments"></label>
                             <h3>Ortodontia</h3>
                         </header>
-                        <p>O ortodontista é o especialista que cuida do crescimento e desenvolvimento da face, bem
-                            como do desenvolvimento das dentições decíduas (de leite), mista e permanente. Cuida
-                            também dos desvios de normalidade das dentições, prevenindo, interceptando e corrigindo
-                            as más oclusões dentárias.</p>
+                        <p>
+                            O ortodontista é o especialista que cuida do crescimento e
+                            desenvolvimento da face, bem como do desenvolvimento das
+                            dentições decíduas (de leite), mista e permanente. Cuida também
+                            dos desvios de normalidade das dentições, prevenindo,
+                            interceptando e corrigindo as más oclusões dentárias.
+                        </p>
                     </li>
                     <div class="show-more-list">
                         <li>
                             <header>
-                                <input type="checkbox" id="treatments">
+                                <input type="checkbox" id="treatments" />
                                 <label for="treatments"></label>
                                 <h3>Prótese Dental</h3>
                             </header>
-                            <p>O tratamento de prótese dental sem dúvida é uma arte! O protesista é aquele que cuida da
-                                reconstrução dos dentes destruídos ou da reposição de dentes perdidos por próteses
-                                móveis, ou fixas, visando devolver a saúde bucal, função na mastigação, conforto e
-                                estética.</p>
+                            <p>
+                                O tratamento de prótese dental sem dúvida é uma arte! O
+                                protesista é aquele que cuida da reconstrução dos dentes
+                                destruídos ou da reposição de dentes perdidos por próteses
+                                móveis, ou fixas, visando devolver a saúde bucal, função na
+                                mastigação, conforto e estética.
+                            </p>
                         </li>
 
                         <li>
                             <header>
-                                <input type="checkbox" id="treatments">
+                                <input type="checkbox" id="treatments" />
                                 <label for="treatments"></label>
                                 <h3>Estética</h3>
                             </header>
-                            <p>A especialidade que cuida dessa parte na odontologia é a Dentística. Esse profissional
-                                cuida também da estética dental.
-                                Muitos materiais odontológicos disponíveis hoje são de altíssima qualidade e garantem
-                                segurança, saúde e estética ao
-                                paciente.</p>
+                            <p>
+                                A especialidade que cuida dessa parte na odontologia é a
+                                Dentística. Esse profissional cuida também da estética dental.
+                                Muitos materiais odontológicos disponíveis hoje são de
+                                altíssima qualidade e garantem segurança, saúde e estética ao
+                                paciente.
+                            </p>
                         </li>
                     </div>
                 </ul>
                 <div class="show-more">
                     <button class="btn-show-more">
-                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="0.503174" width="24" height="24" rx="3" fill="white" fill-opacity="0.15" />
-                            <path
-                                d="M8.12498 9.50319L12.005 13.3832L15.885 9.50319C16.275 9.11319 16.905 9.11319 17.295 9.50319C17.685 9.89319 17.685 10.5232 17.295 10.9132L12.705 15.5032C12.315 15.8932 11.685 15.8932 11.295 15.5032L6.70498 10.9132C6.31498 10.5232 6.31498 9.89319 6.70498 9.50319C7.09498 9.12319 7.73498 9.11319 8.12498 9.50319Z"
-                                fill="white" />
-                        </svg>
+                        <i class="fa-solid fa-angle-down"></i>
                         Mostrar mais
                     </button>
                 </div>
             </div>
         </section>
-        <!-- 
-        <section></section>
-        <section></section>
-        <section></section> -->
-    </main>
-    <!-- <img src="./assets/Group 51.png" alt=""> -->
 
+        <section id="professionals">
+            <div class="wrapper">
+                <header>
+                    <h2>Dentistas Certificados</h2>
+                    <p>
+                        Nossa equipe de dentistas e assistentes é formada apenas por
+                        profissionais altamente qualificados.
+                    </p>
+                </header>
+
+                <div class="swiper mySwiper">
+                    <ul class="swiper-wrapper pro-list">
+                        <li class="swiper-slide">
+                            <img src="assets/dr-patrick-ribeiro.png" alt="doctor-pedro-ribeiro" />
+                            <div class="about-professional">
+                                <h3>Dr. Pedro Ribeiro</h3>
+                                <p>Ortodontista</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="assets/dr-katarina-alves.png" alt="female-doctor-katarina-alves" />
+                            <div class="about-professional">
+                                <h3>Dra. Katarina Alves</h3>
+                                <p>Clínica geral</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="assets/dr-gustavo-ramos.png" alt="doctor-gustavo-ramos" />
+                            <div class="about-professional">
+                                <h3>Dr. Gustavo Ramos</h3>
+                                <p>Odontopediatra</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="assets/dra-yasmin-santos.png" alt="female-doctor-yamins-santos" />
+                            <div class="about-professional">
+                                <h3>Dra. Yasmin Santos</h3>
+                                <p>Implantodentista</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="scheduling">
+            <div class="wrapper">
+                <header>
+                    <h2>Venha fazer uma visita e conhecer nossa clínica!</h2>
+                    <p>Estamos ansiosos para conhecer você e toda sua família.</p>
+                    <button class="btn-scheduling">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Agende agora
+                    </button>
+                </header>
+
+                <div class="colum-b">
+                    <img src="./assets/customer-having-her-mouth-examined-by-the-dentist.png"
+                        alt="Customer-having-her-mouth-examined-by-the-dentist." />
+                </div>
+            </div>
+        </section>
+
+        <section id="customer-reviews">
+            <div class="wrapper">
+                <header>
+                    <h2>Nossos Clientes</h2>
+                </header>
+                <div class="swiper mySwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <svg width="37" height="34" viewBox="0 0 37 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32.932 19.812C34.8949 19.812 35.8763 20.7935 35.8763 22.7563V30.7388C35.8763 32.7017 34.8949 33.6831 32.932 33.6831H25.3422C23.3793 33.6831 22.3978 32.7017 22.3978 30.7388V22.7563C22.3978 18.1763 22.8776 14.1851 23.8373 10.7827C24.8405 7.33675 26.7816 4.32699 29.6605 1.75342C30.6202 0.924642 31.4271 0.815592 32.0814 1.42627L35.0258 4.17432C35.6801 4.78499 35.5274 5.52653 34.5677 6.39893C33.0847 7.70752 31.8633 9.60498 30.9037 12.0913C29.9877 14.534 29.5297 17.1076 29.5297 19.812H32.932ZM11.3402 19.812C13.3031 19.812 14.2845 20.7935 14.2845 22.7563V30.7388C14.2845 32.7017 13.3031 33.6831 11.3402 33.6831H3.75037C1.78748 33.6831 0.80603 32.7017 0.80603 30.7388V22.7563C0.80603 18.1763 1.28585 14.1851 2.24548 10.7827C3.24874 7.33675 5.18982 4.32699 8.06873 1.75342C9.02836 0.924642 9.83533 0.815592 10.4896 1.42627L13.434 4.17432C14.0883 4.78499 13.9356 5.52653 12.976 6.39893C11.4929 7.70752 10.2715 9.60498 9.31189 12.0913C8.39587 14.534 7.93787 17.1076 7.93787 19.812H11.3402Z"
+                                    fill="#0C63DF" />
+                            </svg>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint quidem soluta atque.
+                            </p>
+
+                            <div class="user-coment">
+                                <img src="./assets/Blonde-woman-smiling-for-the-photo.png" alt="User photo" />
+                                <div class="user-info">
+                                    <h3>Suzane Amorim</h3>
+                                    <p>Paciente</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <svg width="37" height="34" viewBox="0 0 37 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32.932 19.812C34.8949 19.812 35.8763 20.7935 35.8763 22.7563V30.7388C35.8763 32.7017 34.8949 33.6831 32.932 33.6831H25.3422C23.3793 33.6831 22.3978 32.7017 22.3978 30.7388V22.7563C22.3978 18.1763 22.8776 14.1851 23.8373 10.7827C24.8405 7.33675 26.7816 4.32699 29.6605 1.75342C30.6202 0.924642 31.4271 0.815592 32.0814 1.42627L35.0258 4.17432C35.6801 4.78499 35.5274 5.52653 34.5677 6.39893C33.0847 7.70752 31.8633 9.60498 30.9037 12.0913C29.9877 14.534 29.5297 17.1076 29.5297 19.812H32.932ZM11.3402 19.812C13.3031 19.812 14.2845 20.7935 14.2845 22.7563V30.7388C14.2845 32.7017 13.3031 33.6831 11.3402 33.6831H3.75037C1.78748 33.6831 0.80603 32.7017 0.80603 30.7388V22.7563C0.80603 18.1763 1.28585 14.1851 2.24548 10.7827C3.24874 7.33675 5.18982 4.32699 8.06873 1.75342C9.02836 0.924642 9.83533 0.815592 10.4896 1.42627L13.434 4.17432C14.0883 4.78499 13.9356 5.52653 12.976 6.39893C11.4929 7.70752 10.2715 9.60498 9.31189 12.0913C8.39587 14.534 7.93787 17.1076 7.93787 19.812H11.3402Z"
+                                    fill="#0C63DF" />
+                            </svg>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint quidem soluta atque.
+                            </p>
+
+                            <div class="user-coment">
+                                <img src="./assets/Blonde-woman-smiling-for-the-photo.png" alt="Foto do usuário" />
+                                <div class="user-info">
+                                    <h3>Suzane Amorim</h3>
+                                    <p>Paciente</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <svg width="37" height="34" viewBox="0 0 37 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32.932 19.812C34.8949 19.812 35.8763 20.7935 35.8763 22.7563V30.7388C35.8763 32.7017 34.8949 33.6831 32.932 33.6831H25.3422C23.3793 33.6831 22.3978 32.7017 22.3978 30.7388V22.7563C22.3978 18.1763 22.8776 14.1851 23.8373 10.7827C24.8405 7.33675 26.7816 4.32699 29.6605 1.75342C30.6202 0.924642 31.4271 0.815592 32.0814 1.42627L35.0258 4.17432C35.6801 4.78499 35.5274 5.52653 34.5677 6.39893C33.0847 7.70752 31.8633 9.60498 30.9037 12.0913C29.9877 14.534 29.5297 17.1076 29.5297 19.812H32.932ZM11.3402 19.812C13.3031 19.812 14.2845 20.7935 14.2845 22.7563V30.7388C14.2845 32.7017 13.3031 33.6831 11.3402 33.6831H3.75037C1.78748 33.6831 0.80603 32.7017 0.80603 30.7388V22.7563C0.80603 18.1763 1.28585 14.1851 2.24548 10.7827C3.24874 7.33675 5.18982 4.32699 8.06873 1.75342C9.02836 0.924642 9.83533 0.815592 10.4896 1.42627L13.434 4.17432C14.0883 4.78499 13.9356 5.52653 12.976 6.39893C11.4929 7.70752 10.2715 9.60498 9.31189 12.0913C8.39587 14.534 7.93787 17.1076 7.93787 19.812H11.3402Z"
+                                    fill="#0C63DF" />
+                            </svg>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint quidem soluta atque.
+                            </p>
+
+                            <div class="user-coment">
+                                <img src="./assets/Blonde-woman-smiling-for-the-photo.png" alt="Foto do usuário" />
+                                <div class="user-info">
+                                    <h3>Suzane Amorim</h3>
+                                    <p>Paciente</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <svg width="37" height="34" viewBox="0 0 37 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32.932 19.812C34.8949 19.812 35.8763 20.7935 35.8763 22.7563V30.7388C35.8763 32.7017 34.8949 33.6831 32.932 33.6831H25.3422C23.3793 33.6831 22.3978 32.7017 22.3978 30.7388V22.7563C22.3978 18.1763 22.8776 14.1851 23.8373 10.7827C24.8405 7.33675 26.7816 4.32699 29.6605 1.75342C30.6202 0.924642 31.4271 0.815592 32.0814 1.42627L35.0258 4.17432C35.6801 4.78499 35.5274 5.52653 34.5677 6.39893C33.0847 7.70752 31.8633 9.60498 30.9037 12.0913C29.9877 14.534 29.5297 17.1076 29.5297 19.812H32.932ZM11.3402 19.812C13.3031 19.812 14.2845 20.7935 14.2845 22.7563V30.7388C14.2845 32.7017 13.3031 33.6831 11.3402 33.6831H3.75037C1.78748 33.6831 0.80603 32.7017 0.80603 30.7388V22.7563C0.80603 18.1763 1.28585 14.1851 2.24548 10.7827C3.24874 7.33675 5.18982 4.32699 8.06873 1.75342C9.02836 0.924642 9.83533 0.815592 10.4896 1.42627L13.434 4.17432C14.0883 4.78499 13.9356 5.52653 12.976 6.39893C11.4929 7.70752 10.2715 9.60498 9.31189 12.0913C8.39587 14.534 7.93787 17.1076 7.93787 19.812H11.3402Z"
+                                    fill="#0C63DF" />
+                            </svg>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint quidem soluta atque.
+                            </p>
+
+                            <div class="user-coment">
+                                <img src="./assets/Blonde-woman-smiling-for-the-photo.png" alt="Foto do usuário" />
+                                <div class="user-info">
+                                    <h3>Suzane Amorim</h3>
+                                    <p>Paciente</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="doubt">
+            <div class="wrapper">
+                <div class="col-a">
+                    <header>
+                        <h2>
+                            Dúvidas frequentes
+                        </h2>
+                        <p>
+                            É sempre bom manter-se informado(a) e é por isso que preparamos essa seção para esclarecer
+                            suas
+                            possíveis dúvidas.
+                        </p>
+                    </header>
+
+                    <ul class="doubt-list">
+                        <li class="doubt-items">
+                            <header>
+                                <h3>01 - Será que tenho DTM?
+                                </h3>
+                                <button class="btn-show-text"> <i class="fa-solid fa-angle-down"></i> </button>
+                            </header>
+                            <p>Pode acontecer em qualquer idade, mas acomete principalmente adultos acima dos 40 anos.
+                                Os
+                                sintomas mais comuns são
+                                dores na ATM (Articulação Temporomandibular), dores musculares na face e no pescoço,
+                                dores
+                                de cabeça, dificuldades em
+                                abrir a boca na extensão que gostaria, dor e estalos ao abrir a boca.</p>
+                        </li>
+
+                        <li class="doubt-items">
+                            <header>
+                                <h3>02 - O que é DTM?
+                                </h3>
+                                <button class="btn-show-text"> <i class="fa-solid fa-angle-down"></i> </button>
+                            </header>
+                            <p>DTM significa Disfunção Temporomandibular. A articulação temporomandibular (ATM) funciona
+                                como uma dobradiça que liga o
+                                maxilar ao crânio. Esta disfunção pode causar dor e desconforto. Dores no maxilar,
+                                dificuldade de mastigar e estalos ou
+                                travamentos das articulações da mandíbula são alguns dos sintomas. Os tratamentos comuns
+                                incluem medicamentos,
+                                protetores de mordida e fisioterapia.</p>
+                        </li>
+
+                        <li class="doubt-items">
+                            <header>
+                                <h3>03 - O que é bichectomia?
+                                </h3>
+                                <button class="btn-show-text"> <i class="fa-solid fa-angle-down"></i> </button>
+                            </header>
+                            <p>A bichectomia é a cirurgia plástica em que há a retirada total ou mesmo parcial de duas
+                                bolsas de gorduras presentes uma
+                                em cada lado da boca, entre o maxilar e a mandíbula, chamadas de "bolas de Bichat".
+                                Essas
+                                bolsas de gordura estão
+                                presentes no corpo, não importa se a pessoa está ou não acima do peso.</p>
+                        </li>
+
+                        <li class="doubt-items">
+                            <header>
+                                <h3>04 - Dentista pode aplicar botox e usar preenchedores faciais?
+                                </h3>
+                                <button class="btn-show-text"> <i class="fa-solid fa-angle-down"></i> </button>
+                            </header>
+                            <p>Para os casos de procedimentos não cirúrgicos, de finalidade estética de harmonização
+                                facial
+                                em sua amplitude, inclui-se
+                                também o terço superior da face. Ou seja: os dentistas podem aplica botox para fins
+                                estéticos em toda a face.</p>
+                        </li>
+
+                        <li class="doubt-items">
+                            <header>
+                                <h3>05 - O que é harmonização facial?
+                                </h3>
+                                <button class="btn-show-text"> <i class="fa-solid fa-angle-down"></i> </button>
+                            </header>
+                            <p>A harmonização facial, também conhecida por harmonização orofacial, é indicada para
+                                homens e
+                                mulheres que desejam
+                                melhorar a aparência do rosto e consiste na realização de um conjunto de diferentes
+                                procedimentos estéticos, que têm
+                                como objetivo melhorar o equilíbrio entre determinadas regiões do rosto, como o nariz,
+                                queixo, dentes ou região malar</p>
+                        </li>
+
+                        <li class="doubt-items">
+                            <header>
+                                <h3>06 - Aparelhos estéticos funcionam como os metálicos?
+                                </h3>
+                                <button class="btn-show-text"> <i class="fa-solid fa-angle-down"></i> </button>
+                            </header>
+                            <p> diferente do aparelho mais tradicional, ele é composto por peças transparentes que não
+                                prejudicam a aparência do sorriso.
+                                Por essa razão, ele é indicado para quem deseja alinhar os dentes de maneira discreta,
+                                sem
+                                atrair olhares, como ocorre com o aparelho metálico</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-b">
+                    <img src="./assets/Smiling-dentist-and-woman-brushing-her-own-teeth-with-clinic-contact-number.png"
+                        alt="Smiling-dentist-and-woman-brushing-her-own-teeth-with-clinic-contact-number">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <header>
+            <svg class="logo" width="171" height="46" viewBox="0 0 171 46" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M49.4622 30.9902H48.2763C48.2062 30.6491 48.0834 30.3495 47.9081 30.0913C47.7359 29.833 47.5256 29.6163 47.2769 29.4409C47.0314 29.2624 46.7589 29.1285 46.4592 29.0393C46.1596 28.95 45.8472 28.9054 45.522 28.9054C44.9291 28.9054 44.3919 29.0552 43.9106 29.3549C43.4324 29.6545 43.0514 30.096 42.7677 30.6794C42.4872 31.2628 42.3469 31.9785 42.3469 32.8264C42.3469 33.6744 42.4872 34.39 42.7677 34.9734C43.0514 35.5568 43.4324 35.9983 43.9106 36.2979C44.3919 36.5976 44.9291 36.7474 45.522 36.7474C45.8472 36.7474 46.1596 36.7028 46.4592 36.6135C46.7589 36.5243 47.0314 36.392 47.2769 36.2167C47.5256 36.0381 47.7359 35.8198 47.9081 35.5616C48.0834 35.3002 48.2062 35.0005 48.2763 34.6626H49.4622C49.3729 35.1631 49.2103 35.611 48.9744 36.0063C48.7385 36.4015 48.4452 36.7379 48.0946 37.0152C47.7439 37.2894 47.3502 37.4982 46.9135 37.6416C46.4799 37.7851 46.0161 37.8568 45.522 37.8568C44.6868 37.8568 43.944 37.6528 43.2937 37.2447C42.6434 36.8367 42.1318 36.2565 41.7588 35.5042C41.3858 34.7519 41.1993 33.8593 41.1993 32.8264C41.1993 31.7936 41.3858 30.901 41.7588 30.1486C42.1318 29.3963 42.6434 28.8161 43.2937 28.4081C43.944 28.0001 44.6868 27.796 45.522 27.796C46.0161 27.796 46.4799 27.8678 46.9135 28.0112C47.3502 28.1547 47.7439 28.3651 48.0946 28.6424C48.4452 28.9166 48.7385 29.2513 48.9744 29.6466C49.2103 30.0387 49.3729 30.4866 49.4622 30.9902ZM52.3539 27.9299V37.7229H51.2254V27.9299H52.3539ZM54.4208 37.7229V30.3782H55.5493V37.7229H54.4208ZM54.4782 29.3836L55.6449 27.1648H56.9647L55.4728 29.3836H54.4782ZM58.7447 33.3046V37.7229H57.6162V30.3782H58.7064V31.5258H58.8021C58.9742 31.1528 59.2356 30.8532 59.5863 30.6268C59.9369 30.3973 60.3896 30.2825 60.9443 30.2825C61.4416 30.2825 61.8767 30.3845 62.2497 30.5886C62.6227 30.7894 62.9128 31.0954 63.12 31.5067C63.3272 31.9147 63.4308 32.4311 63.4308 33.0559V37.7229H62.3023V33.1324C62.3023 32.5554 62.1525 32.106 61.8528 31.784C61.5532 31.4588 61.1419 31.2963 60.6191 31.2963C60.2589 31.2963 59.9369 31.3744 59.6532 31.5306C59.3727 31.6868 59.1511 31.9147 58.9886 32.2143C58.826 32.514 58.7447 32.8774 58.7447 33.3046ZM65.4929 37.7229V30.3782H66.6214V37.7229H65.4929ZM66.0667 29.154C65.8467 29.154 65.6571 29.0791 65.4977 28.9293C65.3415 28.7795 65.2634 28.5994 65.2634 28.389C65.2634 28.1786 65.3415 27.9985 65.4977 27.8486C65.6571 27.6988 65.8467 27.6239 66.0667 27.6239C66.2867 27.6239 66.4747 27.6988 66.6309 27.8486C66.7903 27.9985 66.87 28.1786 66.87 28.389C66.87 28.5994 66.7903 28.7795 66.6309 28.9293C66.4747 29.0791 66.2867 29.154 66.0667 29.154ZM71.6721 37.8759C70.9835 37.8759 70.3906 37.7133 69.8933 37.3882C69.396 37.063 69.0134 36.6151 68.7457 36.0445C68.4779 35.4739 68.344 34.822 68.344 34.0888C68.344 33.3428 68.4811 32.6846 68.7552 32.1139C69.0326 31.5401 69.4183 31.0922 69.9124 30.7703C70.4097 30.4451 70.9899 30.2825 71.653 30.2825C72.1694 30.2825 72.6348 30.3782 73.0492 30.5694C73.4636 30.7607 73.8031 31.0285 74.0677 31.3728C74.3323 31.717 74.4965 32.1187 74.5602 32.5778H73.4318C73.3457 32.243 73.1544 31.9466 72.858 31.6884C72.5647 31.427 72.1694 31.2963 71.6721 31.2963C71.2322 31.2963 70.8464 31.411 70.5149 31.6405C70.1866 31.8669 69.9299 32.1873 69.745 32.6017C69.5633 33.0129 69.4725 33.4959 69.4725 34.0505C69.4725 34.618 69.5617 35.1121 69.7403 35.5329C69.922 35.9537 70.177 36.2804 70.5053 36.5131C70.8369 36.7458 71.2258 36.8622 71.6721 36.8622C71.9654 36.8622 72.2315 36.8112 72.4706 36.7092C72.7097 36.6072 72.9121 36.4605 73.0779 36.2693C73.2437 36.078 73.3616 35.8485 73.4318 35.5807H74.5602C74.4965 36.0142 74.3387 36.4047 74.0869 36.7522C73.8382 37.0965 73.5083 37.3706 73.097 37.5747C72.689 37.7755 72.214 37.8759 71.6721 37.8759ZM78.3713 37.895C77.9059 37.895 77.4835 37.8074 77.1041 37.632C76.7248 37.4535 76.4235 37.1969 76.2004 36.8622C75.9772 36.5243 75.8657 36.1162 75.8657 35.6381C75.8657 35.2173 75.9485 34.8762 76.1143 34.6148C76.2801 34.3502 76.5016 34.143 76.779 33.9932C77.0563 33.8433 77.3623 33.7318 77.6971 33.6584C78.035 33.5819 78.3745 33.5214 78.7156 33.4767C79.1619 33.4193 79.5237 33.3763 79.801 33.3476C80.0816 33.3157 80.2856 33.2631 80.4131 33.1898C80.5438 33.1165 80.6091 32.989 80.6091 32.8073V32.769C80.6091 32.2972 80.48 31.9306 80.2218 31.6692C79.9668 31.4078 79.5795 31.2771 79.0599 31.2771C78.5211 31.2771 78.0987 31.3951 77.7927 31.631C77.4867 31.8669 77.2715 32.1187 77.1472 32.3865L76.0761 32.004C76.2673 31.5577 76.5224 31.2102 76.8411 30.9615C77.1631 30.7097 77.5138 30.5344 77.8931 30.4355C78.2757 30.3335 78.6518 30.2825 79.0216 30.2825C79.2575 30.2825 79.5285 30.3112 79.8345 30.3686C80.1437 30.4228 80.4418 30.536 80.7287 30.7081C81.0188 30.8802 81.2595 31.1401 81.4507 31.4875C81.642 31.835 81.7376 32.3004 81.7376 32.8838V37.7229H80.6091V36.7283H80.5518C80.4752 36.8877 80.3477 37.0582 80.1692 37.2399C79.9907 37.4217 79.7532 37.5763 79.4567 37.7038C79.1603 37.8313 78.7985 37.895 78.3713 37.895ZM78.5434 36.8813C78.9897 36.8813 79.3659 36.7937 79.6719 36.6183C79.9811 36.443 80.2138 36.2167 80.3701 35.9393C80.5294 35.662 80.6091 35.3703 80.6091 35.0643V34.0314C80.5613 34.0888 80.4561 34.1414 80.2935 34.1892C80.1342 34.2338 79.9493 34.2737 79.7389 34.3087C79.5317 34.3406 79.3292 34.3693 79.1316 34.3948C78.9371 34.4171 78.7793 34.4363 78.6582 34.4522C78.3649 34.4905 78.0908 34.5526 77.8357 34.6387C77.5839 34.7216 77.3799 34.8475 77.2237 35.0164C77.0707 35.1822 76.9942 35.4085 76.9942 35.6954C76.9942 36.0875 77.1392 36.384 77.4293 36.5848C77.7226 36.7825 78.0939 36.8813 78.5434 36.8813ZM90.5683 37.8759C89.9052 37.8759 89.3234 37.7181 88.8229 37.4025C88.3256 37.0869 87.9367 36.6454 87.6562 36.078C87.3789 35.5106 87.2402 34.8475 87.2402 34.0888C87.2402 33.3237 87.3789 32.6559 87.6562 32.0852C87.9367 31.5146 88.3256 31.0715 88.8229 30.7559C89.3234 30.4403 89.9052 30.2825 90.5683 30.2825C91.2313 30.2825 91.8115 30.4403 92.3088 30.7559C92.8093 31.0715 93.1982 31.5146 93.4756 32.0852C93.7561 32.6559 93.8964 33.3237 93.8964 34.0888C93.8964 34.8475 93.7561 35.5106 93.4756 36.078C93.1982 36.6454 92.8093 37.0869 92.3088 37.4025C91.8115 37.7181 91.2313 37.8759 90.5683 37.8759ZM90.5683 36.8622C91.072 36.8622 91.4864 36.7331 91.8115 36.4749C92.1367 36.2167 92.3774 35.8772 92.5336 35.4564C92.6898 35.0356 92.7679 34.5797 92.7679 34.0888C92.7679 33.5979 92.6898 33.1404 92.5336 32.7164C92.3774 32.2925 92.1367 31.9498 91.8115 31.6884C91.4864 31.427 91.072 31.2963 90.5683 31.2963C90.0646 31.2963 89.6502 31.427 89.325 31.6884C88.9999 31.9498 88.7592 32.2925 88.603 32.7164C88.4468 33.1404 88.3687 33.5979 88.3687 34.0888C88.3687 34.5797 88.4468 35.0356 88.603 35.4564C88.7592 35.8772 88.9999 36.2167 89.325 36.4749C89.6502 36.7331 90.0646 36.8622 90.5683 36.8622ZM98.3924 37.8759C97.7803 37.8759 97.24 37.7213 96.7714 37.4121C96.3028 37.0997 95.9362 36.6598 95.6716 36.0923C95.407 35.5217 95.2747 34.8475 95.2747 34.0697C95.2747 33.2982 95.407 32.6288 95.6716 32.0613C95.9362 31.4939 96.3044 31.0556 96.7762 30.7464C97.248 30.4371 97.7931 30.2825 98.4115 30.2825C98.8897 30.2825 99.2674 30.3622 99.5448 30.5216C99.8253 30.6778 100.039 30.8563 100.186 31.0572C100.335 31.2548 100.452 31.4174 100.535 31.5449H100.63V27.9299H101.759V37.7229H100.668V36.5944H100.535C100.452 36.7283 100.334 36.8973 100.181 37.1013C100.028 37.3021 99.8094 37.4822 99.5257 37.6416C99.2419 37.7978 98.8642 37.8759 98.3924 37.8759ZM98.5454 36.8622C98.9981 36.8622 99.3806 36.7442 99.693 36.5083C100.005 36.2693 100.243 35.9393 100.405 35.5185C100.568 35.0945 100.649 34.6052 100.649 34.0505C100.649 33.5022 100.57 33.0225 100.41 32.6112C100.251 32.1968 100.015 31.8748 99.7026 31.6453C99.3902 31.4126 99.0044 31.2963 98.5454 31.2963C98.0672 31.2963 97.6687 31.419 97.35 31.6645C97.0344 31.9067 96.7969 32.2367 96.6375 32.6543C96.4813 33.0687 96.4032 33.5341 96.4032 34.0505C96.4032 34.5733 96.4829 35.0483 96.6423 35.4755C96.8049 35.8995 97.0439 36.2374 97.3595 36.4892C97.6783 36.7379 98.0736 36.8622 98.5454 36.8622ZM106.966 37.8759C106.303 37.8759 105.721 37.7181 105.221 37.4025C104.723 37.0869 104.334 36.6454 104.054 36.078C103.777 35.5106 103.638 34.8475 103.638 34.0888C103.638 33.3237 103.777 32.6559 104.054 32.0852C104.334 31.5146 104.723 31.0715 105.221 30.7559C105.721 30.4403 106.303 30.2825 106.966 30.2825C107.629 30.2825 108.209 30.4403 108.707 30.7559C109.207 31.0715 109.596 31.5146 109.873 32.0852C110.154 32.6559 110.294 33.3237 110.294 34.0888C110.294 34.8475 110.154 35.5106 109.873 36.078C109.596 36.6454 109.207 37.0869 108.707 37.4025C108.209 37.7181 107.629 37.8759 106.966 37.8759ZM106.966 36.8622C107.47 36.8622 107.884 36.7331 108.209 36.4749C108.534 36.2167 108.775 35.8772 108.931 35.4564C109.088 35.0356 109.166 34.5797 109.166 34.0888C109.166 33.5979 109.088 33.1404 108.931 32.7164C108.775 32.2925 108.534 31.9498 108.209 31.6884C107.884 31.427 107.47 31.2963 106.966 31.2963C106.462 31.2963 106.048 31.427 105.723 31.6884C105.398 31.9498 105.157 32.2925 105.001 32.7164C104.845 33.1404 104.766 33.5979 104.766 34.0888C104.766 34.5797 104.845 35.0356 105.001 35.4564C105.157 35.8772 105.398 36.2167 105.723 36.4749C106.048 36.7331 106.462 36.8622 106.966 36.8622ZM113.145 33.3046V37.7229H112.017V30.3782H113.107V31.5258H113.203C113.375 31.1528 113.636 30.8532 113.987 30.6268C114.337 30.3973 114.79 30.2825 115.345 30.2825C115.842 30.2825 116.277 30.3845 116.65 30.5886C117.023 30.7894 117.313 31.0954 117.52 31.5067C117.728 31.9147 117.831 32.4311 117.831 33.0559V37.7229H116.703V33.1324C116.703 32.5554 116.553 32.106 116.253 31.784C115.954 31.4588 115.542 31.2963 115.02 31.2963C114.659 31.2963 114.337 31.3744 114.054 31.5306C113.773 31.6868 113.552 31.9147 113.389 32.2143C113.227 32.514 113.145 32.8774 113.145 33.3046ZM123.088 30.3782V31.3345H119.281V30.3782H123.088ZM120.391 28.6185H121.519V35.6189C121.519 35.9377 121.565 36.1768 121.658 36.3362C121.754 36.4924 121.875 36.5976 122.021 36.6518C122.171 36.7028 122.329 36.7283 122.495 36.7283C122.619 36.7283 122.721 36.7219 122.801 36.7092C122.88 36.6932 122.944 36.6805 122.992 36.6709L123.222 37.6846C123.145 37.7133 123.038 37.742 122.901 37.7707C122.764 37.8026 122.59 37.8185 122.38 37.8185C122.061 37.8185 121.749 37.75 121.443 37.6129C121.14 37.4758 120.888 37.267 120.687 36.9865C120.49 36.706 120.391 36.3521 120.391 35.925V28.6185ZM127.69 37.8759C127.027 37.8759 126.445 37.7181 125.945 37.4025C125.447 37.0869 125.058 36.6454 124.778 36.078C124.501 35.5106 124.362 34.8475 124.362 34.0888C124.362 33.3237 124.501 32.6559 124.778 32.0852C125.058 31.5146 125.447 31.0715 125.945 30.7559C126.445 30.4403 127.027 30.2825 127.69 30.2825C128.353 30.2825 128.933 30.4403 129.431 30.7559C129.931 31.0715 130.32 31.5146 130.597 32.0852C130.878 32.6559 131.018 33.3237 131.018 34.0888C131.018 34.8475 130.878 35.5106 130.597 36.078C130.32 36.6454 129.931 37.0869 129.431 37.4025C128.933 37.7181 128.353 37.8759 127.69 37.8759ZM127.69 36.8622C128.194 36.8622 128.608 36.7331 128.933 36.4749C129.258 36.2167 129.499 35.8772 129.655 35.4564C129.812 35.0356 129.89 34.5797 129.89 34.0888C129.89 33.5979 129.812 33.1404 129.655 32.7164C129.499 32.2925 129.258 31.9498 128.933 31.6884C128.608 31.427 128.194 31.2963 127.69 31.2963C127.186 31.2963 126.772 31.427 126.447 31.6884C126.122 31.9498 125.881 32.2925 125.725 32.7164C125.569 33.1404 125.49 33.5979 125.49 34.0888C125.49 34.5797 125.569 35.0356 125.725 35.4564C125.881 35.8772 126.122 36.2167 126.447 36.4749C126.772 36.7331 127.186 36.8622 127.69 36.8622ZM133.869 27.9299V37.7229H132.741V27.9299H133.869ZM138.92 37.8759C138.257 37.8759 137.675 37.7181 137.175 37.4025C136.677 37.0869 136.288 36.6454 136.008 36.078C135.731 35.5106 135.592 34.8475 135.592 34.0888C135.592 33.3237 135.731 32.6559 136.008 32.0852C136.288 31.5146 136.677 31.0715 137.175 30.7559C137.675 30.4403 138.257 30.2825 138.92 30.2825C139.583 30.2825 140.163 30.4403 140.66 30.7559C141.161 31.0715 141.55 31.5146 141.827 32.0852C142.108 32.6559 142.248 33.3237 142.248 34.0888C142.248 34.8475 142.108 35.5106 141.827 36.078C141.55 36.6454 141.161 37.0869 140.66 37.4025C140.163 37.7181 139.583 37.8759 138.92 37.8759ZM138.92 36.8622C139.424 36.8622 139.838 36.7331 140.163 36.4749C140.488 36.2167 140.729 35.8772 140.885 35.4564C141.041 35.0356 141.12 34.5797 141.12 34.0888C141.12 33.5979 141.041 33.1404 140.885 32.7164C140.729 32.2925 140.488 31.9498 140.163 31.6884C139.838 31.427 139.424 31.2963 138.92 31.2963C138.416 31.2963 138.002 31.427 137.677 31.6884C137.352 31.9498 137.111 32.2925 136.955 32.7164C136.798 33.1404 136.72 33.5979 136.72 34.0888C136.72 34.5797 136.798 35.0356 136.955 35.4564C137.111 35.8772 137.352 36.2167 137.677 36.4749C138.002 36.7331 138.416 36.8622 138.92 36.8622ZM138.403 29.3836L139.57 27.1648H140.89L139.398 29.3836H138.403ZM146.935 40.6302C146.39 40.6302 145.922 40.5601 145.529 40.4198C145.137 40.2827 144.811 40.101 144.549 39.8747C144.291 39.6515 144.085 39.4124 143.932 39.1574L144.831 38.5262C144.933 38.6601 145.062 38.8131 145.219 38.9853C145.375 39.1606 145.588 39.312 145.859 39.4395C146.134 39.5702 146.492 39.6356 146.935 39.6356C147.528 39.6356 148.018 39.4921 148.403 39.2052C148.789 38.9183 148.982 38.4689 148.982 37.8568V36.3649H148.886C148.803 36.4988 148.685 36.6645 148.532 36.8622C148.383 37.0566 148.166 37.2304 147.882 37.3834C147.602 37.5332 147.222 37.6081 146.744 37.6081C146.151 37.6081 145.619 37.4679 145.147 37.1873C144.678 36.9068 144.307 36.4988 144.033 35.9632C143.762 35.4277 143.626 34.7774 143.626 34.0123C143.626 33.26 143.759 32.6049 144.023 32.047C144.288 31.4859 144.656 31.0524 145.128 30.7464C145.6 30.4371 146.145 30.2825 146.763 30.2825C147.241 30.2825 147.621 30.3622 147.901 30.5216C148.185 30.6778 148.402 30.8563 148.552 31.0572C148.705 31.2548 148.822 31.4174 148.905 31.5449H149.02V30.3782H150.11V37.9333C150.11 38.5645 149.967 39.0777 149.68 39.473C149.396 39.8715 149.014 40.1632 148.532 40.3481C148.054 40.5362 147.522 40.6302 146.935 40.6302ZM146.897 36.5944C147.35 36.5944 147.732 36.4908 148.045 36.2836C148.357 36.0764 148.595 35.7783 148.757 35.3894C148.92 35.0005 149.001 34.5351 149.001 33.9932C149.001 33.464 148.921 32.997 148.762 32.5921C148.603 32.1873 148.367 31.8701 148.054 31.6405C147.742 31.411 147.356 31.2963 146.897 31.2963C146.419 31.2963 146.02 31.4174 145.702 31.6597C145.386 31.9019 145.149 32.2271 144.989 32.6351C144.833 33.0432 144.755 33.4959 144.755 33.9932C144.755 34.5032 144.835 34.9543 144.994 35.3464C145.156 35.7353 145.396 36.0413 145.711 36.2645C146.03 36.4844 146.425 36.5944 146.897 36.5944ZM152.176 37.7229V30.3782H153.305V37.7229H152.176ZM152.75 29.154C152.53 29.154 152.34 29.0791 152.181 28.9293C152.025 28.7795 151.947 28.5994 151.947 28.389C151.947 28.1786 152.025 27.9985 152.181 27.8486C152.34 27.6988 152.53 27.6239 152.75 27.6239C152.97 27.6239 153.158 27.6988 153.314 27.8486C153.474 27.9985 153.553 28.1786 153.553 28.389C153.553 28.5994 153.474 28.7795 153.314 28.9293C153.158 29.0791 152.97 29.154 152.75 29.154ZM158.355 37.8759C157.667 37.8759 157.074 37.7133 156.576 37.3882C156.079 37.063 155.697 36.6151 155.429 36.0445C155.161 35.4739 155.027 34.822 155.027 34.0888C155.027 33.3428 155.164 32.6846 155.438 32.1139C155.716 31.5401 156.101 31.0922 156.596 30.7703C157.093 30.4451 157.673 30.2825 158.336 30.2825C158.853 30.2825 159.318 30.3782 159.732 30.5694C160.147 30.7607 160.486 31.0285 160.751 31.3728C161.015 31.717 161.18 32.1187 161.243 32.5778H160.115C160.029 32.243 159.838 31.9466 159.541 31.6884C159.248 31.427 158.853 31.2963 158.355 31.2963C157.915 31.2963 157.53 31.411 157.198 31.6405C156.87 31.8669 156.613 32.1873 156.428 32.6017C156.247 33.0129 156.156 33.4959 156.156 34.0505C156.156 34.618 156.245 35.1121 156.423 35.5329C156.605 35.9537 156.86 36.2804 157.189 36.5131C157.52 36.7458 157.909 36.8622 158.355 36.8622C158.649 36.8622 158.915 36.8112 159.154 36.7092C159.393 36.6072 159.595 36.4605 159.761 36.2693C159.927 36.078 160.045 35.8485 160.115 35.5807H161.243C161.18 36.0142 161.022 36.4047 160.77 36.7522C160.521 37.0965 160.191 37.3706 159.78 37.5747C159.372 37.7755 158.897 37.8759 158.355 37.8759ZM165.054 37.895C164.589 37.895 164.167 37.8074 163.787 37.632C163.408 37.4535 163.107 37.1969 162.884 36.8622C162.66 36.5243 162.549 36.1162 162.549 35.6381C162.549 35.2173 162.632 34.8762 162.797 34.6148C162.963 34.3502 163.185 34.143 163.462 33.9932C163.739 33.8433 164.046 33.7318 164.38 33.6584C164.718 33.5819 165.058 33.5214 165.399 33.4767C165.845 33.4193 166.207 33.3763 166.484 33.3476C166.765 33.3157 166.969 33.2631 167.096 33.1898C167.227 33.1165 167.292 32.989 167.292 32.8073V32.769C167.292 32.2972 167.163 31.9306 166.905 31.6692C166.65 31.4078 166.263 31.2771 165.743 31.2771C165.204 31.2771 164.782 31.3951 164.476 31.631C164.17 31.8669 163.955 32.1187 163.83 32.3865L162.759 32.004C162.951 31.5577 163.206 31.2102 163.524 30.9615C163.846 30.7097 164.197 30.5344 164.576 30.4355C164.959 30.3335 165.335 30.2825 165.705 30.2825C165.941 30.2825 166.212 30.3112 166.518 30.3686C166.827 30.4228 167.125 30.536 167.412 30.7081C167.702 30.8802 167.943 31.1401 168.134 31.4875C168.325 31.835 168.421 32.3004 168.421 32.8838V37.7229H167.292V36.7283H167.235C167.158 36.8877 167.031 37.0582 166.852 37.2399C166.674 37.4217 166.436 37.5763 166.14 37.7038C165.843 37.8313 165.482 37.895 165.054 37.895ZM165.227 36.8813C165.673 36.8813 166.049 36.7937 166.355 36.6183C166.664 36.443 166.897 36.2167 167.053 35.9393C167.213 35.662 167.292 35.3703 167.292 35.0643V34.0314C167.244 34.0888 167.139 34.1414 166.977 34.1892C166.817 34.2338 166.632 34.2737 166.422 34.3087C166.215 34.3406 166.012 34.3693 165.815 34.3948C165.62 34.4171 165.463 34.4363 165.341 34.4522C165.048 34.4905 164.774 34.5526 164.519 34.6387C164.267 34.7216 164.063 34.8475 163.907 35.0164C163.754 35.1822 163.677 35.4085 163.677 35.6954C163.677 36.0875 163.822 36.384 164.112 36.5848C164.406 36.7825 164.777 36.8813 165.227 36.8813Z"
+                    fill="#020E1F" fill-opacity="0.69" />
+                <path
+                    d="M53.5298 11.9961C53.5298 13.42 53.2599 14.6314 52.7201 15.6302C52.1846 16.6291 51.4535 17.392 50.5269 17.9191C49.6045 18.4419 48.5674 18.7033 47.4156 18.7033C46.2552 18.7033 45.2139 18.4398 44.2915 17.9127C43.3692 17.3857 42.6402 16.6227 42.1047 15.6239C41.5691 14.625 41.3013 13.4158 41.3013 11.9961C41.3013 10.5722 41.5691 9.36086 42.1047 8.36201C42.6402 7.36316 43.3692 6.60234 44.2915 6.07954C45.2139 5.55248 46.2552 5.28896 47.4156 5.28896C48.5674 5.28896 49.6045 5.55248 50.5269 6.07954C51.4535 6.60234 52.1846 7.36316 52.7201 8.36201C53.2599 9.36086 53.5298 10.5722 53.5298 11.9961ZM50.7309 11.9961C50.7309 11.0738 50.5928 10.296 50.3165 9.66264C50.0445 9.02933 49.6598 8.54903 49.1625 8.22175C48.6652 7.89447 48.0829 7.73083 47.4156 7.73083C46.7483 7.73083 46.1659 7.89447 45.6686 8.22175C45.1713 8.54903 44.7846 9.02933 44.5083 9.66264C44.2363 10.296 44.1002 11.0738 44.1002 11.9961C44.1002 12.9185 44.2363 13.6963 44.5083 14.3296C44.7846 14.9629 45.1713 15.4432 45.6686 15.7705C46.1659 16.0978 46.7483 16.2614 47.4156 16.2614C48.0829 16.2614 48.6652 16.0978 49.1625 15.7705C49.6598 15.4432 50.0445 14.9629 50.3165 14.3296C50.5928 13.6963 50.7309 12.9185 50.7309 11.9961ZM59.1324 18.6842C58.3886 18.6842 57.7149 18.4929 57.1113 18.1104C56.512 17.7236 56.036 17.1561 55.6832 16.4081C55.3346 15.6557 55.1604 14.7334 55.1604 13.641C55.1604 12.5189 55.341 11.586 55.7023 10.8421C56.0636 10.0941 56.5439 9.53513 57.1432 9.16534C57.7468 8.79131 58.4077 8.60429 59.126 8.60429C59.6743 8.60429 60.1313 8.6978 60.4968 8.88482C60.8666 9.06758 61.1641 9.29711 61.3894 9.57338C61.6189 9.84541 61.7932 10.1132 61.9122 10.3767H61.9951V5.46747H64.7047V18.5248H62.0269V16.9564H61.9122C61.7847 17.2284 61.604 17.4983 61.3703 17.7661C61.1407 18.0296 60.8411 18.2485 60.4713 18.4228C60.1057 18.597 59.6595 18.6842 59.1324 18.6842ZM59.9931 16.5228C60.4309 16.5228 60.8007 16.4038 61.1025 16.1658C61.4085 15.9235 61.6423 15.5856 61.8038 15.1521C61.9696 14.7185 62.0524 14.2106 62.0524 13.6283C62.0524 13.046 61.9717 12.5402 61.8102 12.1109C61.6487 11.6816 61.4149 11.3501 61.1089 11.1163C60.8028 10.8825 60.4309 10.7656 59.9931 10.7656C59.5468 10.7656 59.1707 10.8868 58.8646 11.129C58.5586 11.3713 58.3269 11.7071 58.1697 12.1364C58.0124 12.5657 57.9338 13.063 57.9338 13.6283C57.9338 14.1978 58.0124 14.7015 58.1697 15.1393C58.3312 15.5729 58.5628 15.9129 58.8646 16.1594C59.1707 16.4017 59.5468 16.5228 59.9931 16.5228ZM71.3625 18.716C70.3721 18.716 69.5157 18.5057 68.7931 18.0849C68.0748 17.6598 67.5201 17.069 67.129 16.3124C66.738 15.5516 66.5425 14.6696 66.5425 13.6665C66.5425 12.6549 66.738 11.7709 67.129 11.0143C67.5201 10.2535 68.0748 9.66264 68.7931 9.24185C69.5157 8.81681 70.3721 8.60429 71.3625 8.60429C72.3528 8.60429 73.2072 8.81681 73.9255 9.24185C74.6481 9.66264 75.2049 10.2535 75.5959 11.0143C75.9869 11.7709 76.1825 12.6549 76.1825 13.6665C76.1825 14.6696 75.9869 15.5516 75.5959 16.3124C75.2049 17.069 74.6481 17.6598 73.9255 18.0849C73.2072 18.5057 72.3528 18.716 71.3625 18.716ZM71.3752 16.6121C71.8258 16.6121 72.2019 16.4846 72.5037 16.2296C72.8055 15.9703 73.0329 15.6175 73.1859 15.1712C73.3432 14.7249 73.4218 14.217 73.4218 13.6474C73.4218 13.0779 73.3432 12.5699 73.1859 12.1236C73.0329 11.6773 72.8055 11.3246 72.5037 11.0653C72.2019 10.806 71.8258 10.6764 71.3752 10.6764C70.9204 10.6764 70.5379 10.806 70.2276 11.0653C69.9216 11.3246 69.6899 11.6773 69.5327 12.1236C69.3796 12.5699 69.3031 13.0779 69.3031 13.6474C69.3031 14.217 69.3796 14.7249 69.5327 15.1712C69.6899 15.6175 69.9216 15.9703 70.2276 16.2296C70.5379 16.4846 70.9204 16.6121 71.3752 16.6121ZM80.6645 12.8632V18.5248H77.9485V8.7318H80.537V10.4596H80.6518C80.8685 9.89004 81.232 9.4395 81.742 9.10796C82.2521 8.77218 82.8705 8.60429 83.5973 8.60429C84.2774 8.60429 84.8703 8.75305 85.3761 9.05058C85.8819 9.34811 86.2751 9.77315 86.5556 10.3257C86.8361 10.874 86.9764 11.5286 86.9764 12.2894V18.5248H84.2604V12.774C84.2646 12.1746 84.1116 11.7071 83.8013 11.3713C83.4911 11.0313 83.0639 10.8613 82.5198 10.8613C82.1543 10.8613 81.8313 10.9399 81.5507 11.0972C81.2745 11.2544 81.0577 11.484 80.9004 11.7857C80.7474 12.0833 80.6688 12.4424 80.6645 12.8632ZM94.3259 8.7318V10.772H88.4285V8.7318H94.3259ZM89.7673 6.38557H92.4834V15.5155C92.4834 15.7663 92.5216 15.9618 92.5981 16.102C92.6746 16.2381 92.7809 16.3337 92.9169 16.3889C93.0572 16.4442 93.2187 16.4718 93.4015 16.4718C93.529 16.4718 93.6565 16.4612 93.784 16.4399C93.9115 16.4144 94.0093 16.3953 94.0773 16.3826L94.5044 18.4036C94.3684 18.4461 94.1772 18.495 93.9306 18.5503C93.6841 18.6098 93.3845 18.6459 93.0317 18.6587C92.3771 18.6842 91.8033 18.597 91.3102 18.3973C90.8214 18.1975 90.441 17.8872 90.169 17.4664C89.897 17.0456 89.7631 16.5143 89.7673 15.8725V6.38557ZM100.415 18.716C99.4243 18.716 98.5679 18.5057 97.8453 18.0849C97.127 17.6598 96.5723 17.069 96.1812 16.3124C95.7902 15.5516 95.5947 14.6696 95.5947 13.6665C95.5947 12.6549 95.7902 11.7709 96.1812 11.0143C96.5723 10.2535 97.127 9.66264 97.8453 9.24185C98.5679 8.81681 99.4243 8.60429 100.415 8.60429C101.405 8.60429 102.259 8.81681 102.978 9.24185C103.7 9.66264 104.257 10.2535 104.648 11.0143C105.039 11.7709 105.235 12.6549 105.235 13.6665C105.235 14.6696 105.039 15.5516 104.648 16.3124C104.257 17.069 103.7 17.6598 102.978 18.0849C102.259 18.5057 101.405 18.716 100.415 18.716ZM100.427 16.6121C100.878 16.6121 101.254 16.4846 101.556 16.2296C101.858 15.9703 102.085 15.6175 102.238 15.1712C102.395 14.7249 102.474 14.217 102.474 13.6474C102.474 13.0779 102.395 12.5699 102.238 12.1236C102.085 11.6773 101.858 11.3246 101.556 11.0653C101.254 10.806 100.878 10.6764 100.427 10.6764C99.9726 10.6764 99.5901 10.806 99.2798 11.0653C98.9738 11.3246 98.7421 11.6773 98.5849 12.1236C98.4318 12.5699 98.3553 13.0779 98.3553 13.6474C98.3553 14.217 98.4318 14.7249 98.5849 15.1712C98.7421 15.6175 98.9738 15.9703 99.2798 16.2296C99.5901 16.4846 99.9726 16.6121 100.427 16.6121ZM122.728 10.0388H119.935C119.884 9.67752 119.78 9.35661 119.623 9.07608C119.466 8.79131 119.264 8.54903 119.017 8.34926C118.771 8.14949 118.486 7.99648 118.163 7.89022C117.844 7.78396 117.498 7.73083 117.124 7.73083C116.448 7.73083 115.859 7.89872 115.358 8.2345C114.856 8.56603 114.467 9.05058 114.191 9.68815C113.915 10.3215 113.776 11.0908 113.776 11.9961C113.776 12.927 113.915 13.709 114.191 14.3424C114.471 14.9757 114.862 15.4538 115.364 15.7769C115.865 16.0999 116.446 16.2614 117.104 16.2614C117.474 16.2614 117.816 16.2125 118.131 16.1148C118.45 16.017 118.732 15.8746 118.979 15.6876C119.225 15.4964 119.429 15.2647 119.591 14.9927C119.757 14.7206 119.872 14.4104 119.935 14.0618L122.728 14.0746C122.656 14.6739 122.475 15.252 122.186 15.8088C121.901 16.3613 121.516 16.8565 121.032 17.2943C120.552 17.7278 119.978 18.0721 119.31 18.3271C118.647 18.5779 117.897 18.7033 117.06 18.7033C115.895 18.7033 114.854 18.4398 113.936 17.9127C113.022 17.3857 112.299 16.6227 111.768 15.6239C111.241 14.625 110.977 13.4158 110.977 11.9961C110.977 10.5722 111.245 9.36086 111.781 8.36201C112.316 7.36316 113.043 6.60234 113.961 6.07954C114.879 5.55248 115.912 5.28896 117.06 5.28896C117.816 5.28896 118.518 5.39522 119.164 5.60774C119.814 5.82026 120.39 6.13054 120.892 6.53858C121.393 6.94237 121.801 7.43755 122.116 8.0241C122.435 8.61066 122.639 9.28223 122.728 10.0388ZM127.372 5.46747V18.5248H124.656V5.46747H127.372ZM134.011 18.716C133.004 18.716 132.137 18.512 131.41 18.104C130.687 17.6917 130.13 17.1094 129.739 16.3571C129.348 15.6005 129.153 14.7058 129.153 13.6729C129.153 12.6656 129.348 11.7815 129.739 11.0207C130.13 10.2598 130.681 9.66689 131.391 9.24185C132.105 8.81681 132.942 8.60429 133.903 8.60429C134.549 8.60429 135.15 8.70842 135.707 8.91669C136.268 9.12071 136.757 9.42887 137.173 9.84116C137.594 10.2535 137.921 10.772 138.155 11.3968C138.389 12.0174 138.506 12.7442 138.506 13.5773V14.3232H130.237V12.6401H135.949C135.949 12.249 135.864 11.9026 135.694 11.6008C135.524 11.2991 135.288 11.0632 134.987 10.8931C134.689 10.7189 134.343 10.6317 133.947 10.6317C133.535 10.6317 133.17 10.7274 132.851 10.9186C132.536 11.1057 132.29 11.3586 132.111 11.6773C131.933 11.9919 131.841 12.3425 131.837 12.7293V14.3296C131.837 14.8142 131.926 15.2328 132.105 15.5856C132.288 15.9384 132.545 16.2104 132.876 16.4017C133.208 16.593 133.601 16.6886 134.056 16.6886C134.357 16.6886 134.634 16.6461 134.885 16.5611C135.135 16.4761 135.35 16.3486 135.528 16.1785C135.707 16.0085 135.843 15.8003 135.937 15.5537L138.449 15.7195C138.321 16.3231 138.06 16.8501 137.664 17.3007C137.273 17.747 136.767 18.0955 136.147 18.3463C135.531 18.5928 134.819 18.716 134.011 18.716ZM143.071 18.7097C142.446 18.7097 141.889 18.6013 141.4 18.3845C140.912 18.1635 140.525 17.8383 140.24 17.409C139.96 16.9755 139.819 16.4357 139.819 15.7896C139.819 15.2456 139.919 14.7887 140.119 14.4189C140.319 14.0491 140.591 13.7516 140.935 13.5263C141.279 13.301 141.67 13.131 142.108 13.0162C142.55 12.9015 143.013 12.8207 143.498 12.774C144.068 12.7144 144.527 12.6592 144.875 12.6082C145.224 12.5529 145.477 12.4722 145.634 12.3659C145.791 12.2597 145.87 12.1024 145.87 11.8941V11.8559C145.87 11.4521 145.742 11.1397 145.487 10.9186C145.236 10.6976 144.879 10.5871 144.416 10.5871C143.927 10.5871 143.538 10.6955 143.249 10.9123C142.96 11.1248 142.769 11.3926 142.676 11.7156L140.164 11.5116C140.291 10.9165 140.542 10.4022 140.916 9.96867C141.29 9.53088 141.772 9.1951 142.363 8.96132C142.958 8.7233 143.647 8.60429 144.429 8.60429C144.973 8.60429 145.494 8.66804 145.991 8.79556C146.492 8.92307 146.937 9.12071 147.323 9.38849C147.714 9.65627 148.023 10.0006 148.248 10.4213C148.473 10.8379 148.586 11.3373 148.586 11.9196V18.5248H146.01V17.1668H145.934C145.776 17.4728 145.566 17.7427 145.302 17.9765C145.039 18.206 144.722 18.3866 144.352 18.5184C143.983 18.6459 143.555 18.7097 143.071 18.7097ZM143.849 16.8352C144.248 16.8352 144.601 16.7566 144.907 16.5993C145.213 16.4378 145.453 16.221 145.627 15.949C145.802 15.677 145.889 15.3688 145.889 15.0246V13.9853C145.804 14.0406 145.687 14.0916 145.538 14.1383C145.394 14.1808 145.23 14.2212 145.047 14.2595C144.865 14.2935 144.682 14.3254 144.499 14.3551C144.316 14.3806 144.15 14.404 144.002 14.4252C143.683 14.472 143.405 14.5464 143.166 14.6484C142.928 14.7504 142.744 14.8885 142.612 15.0628C142.48 15.2328 142.414 15.4453 142.414 15.7004C142.414 16.0702 142.548 16.3528 142.816 16.5483C143.088 16.7396 143.432 16.8352 143.849 16.8352ZM153.409 12.8632V18.5248H150.693V8.7318H153.281V10.4596H153.396C153.613 9.89004 153.976 9.4395 154.486 9.10796C154.996 8.77218 155.615 8.60429 156.342 8.60429C157.022 8.60429 157.615 8.75305 158.121 9.05058C158.626 9.34811 159.02 9.77315 159.3 10.3257C159.581 10.874 159.721 11.5286 159.721 12.2894V18.5248H157.005V12.774C157.009 12.1746 156.856 11.7071 156.546 11.3713C156.235 11.0313 155.808 10.8613 155.264 10.8613C154.899 10.8613 154.576 10.9399 154.295 11.0972C154.019 11.2544 153.802 11.484 153.645 11.7857C153.492 12.0833 153.413 12.4424 153.409 12.8632Z"
+                    fill="#020E1F" fill-opacity="0.85" />
+                <g clip-path="url(#clip0_60_158)">
+                    <path
+                        d="M13.3712 22.7228C13.3712 21.6037 13.2508 20.549 13.3936 19.5278C13.7212 17.1918 15.9138 15.5383 18.3024 15.6838C19.4522 15.7658 20.5317 16.2671 21.3357 17.0924C22.1396 17.9178 22.6118 19.0096 22.6624 20.1601C22.6904 20.9994 22.6624 21.8219 22.6624 22.72H34.3731C35.3364 22.72 35.5828 23.0277 35.4568 23.9845C35.0592 27.2545 34.4465 30.4947 33.6226 33.6841C32.7125 37.0665 31.4552 40.3174 29.2822 43.1263C28.4981 44.1418 27.5797 45.0259 26.2719 45.3449C25.1967 45.6078 24.491 45.3448 24.071 44.3349C23.6321 43.2156 23.27 42.0678 22.9873 40.8993C22.4272 38.7731 21.9904 36.6133 21.3771 34.5038C21.0861 33.5373 20.6448 32.6225 20.0694 31.7929C18.9157 30.1143 17.1207 30.1143 15.9026 31.7677C14.9309 33.077 14.4717 34.6157 14.0853 36.1656C13.5616 38.2863 13.1192 40.4237 12.5927 42.5416C12.4208 43.2225 12.1669 43.8801 11.8367 44.5C11.3942 45.3393 10.7614 45.5715 9.82608 45.3812C8.93116 45.1714 8.11909 44.7 7.49348 44.0271C5.95614 42.508 4.97325 40.628 4.10518 38.692C2.58744 35.3571 1.79777 31.8125 1.17051 28.2286C0.924091 26.8298 0.733678 25.4309 0.518059 24.0321C0.364045 23.0361 0.616068 22.7368 1.61296 22.7368H13.374L13.3712 22.7228Z"
+                        fill="#2098E3" />
+                    <path
+                        d="M23.6427 4.93238V3.37687C22.0381 3.23139 20.3608 3.28734 19.1259 1.87451C20.6044 1.05759 22.0689 0.327395 23.7491 0.0979853C30.0972 -0.769296 35.3981 4.23576 35.7901 10.2788C36.0155 13.3576 35.9217 16.4515 35.5101 19.5111C35.4205 20.1434 35.1685 20.3504 34.5384 20.3504C31.4264 20.3504 28.3144 20.3504 25.2024 20.3504C24.5247 20.3504 24.2587 20.0706 24.2335 19.402C24.1989 17.7669 23.5245 16.2105 22.3548 15.0663C21.1851 13.9222 19.6133 13.2814 17.9764 13.2814C16.3394 13.2814 14.7676 13.9222 13.598 15.0663C12.4283 16.2105 11.7538 17.7669 11.7192 19.402C11.694 20.0762 11.4392 20.3504 10.7503 20.3504C7.63832 20.3504 4.5263 20.3504 1.41429 20.3504C0.787036 20.3504 0.537813 20.1266 0.451006 19.4915C-0.0166359 16.0839 -0.198651 12.6568 0.294192 9.24921C1.06426 3.93361 5.73788 -0.299279 11.3356 0.0168587C13.8778 0.10633 16.2844 1.18454 18.0422 3.02157C19.1231 4.14064 20.442 4.59106 21.9009 4.79249C22.4582 4.87363 23.0266 4.88762 23.6427 4.93238ZM4.78579 10.5641C5.43545 7.23487 7.1604 5.04988 10.6915 4.64702V3.16145C7.21641 2.86769 2.75002 7.31041 3.37167 10.4354L4.78579 10.5641Z"
+                        fill="#0C63DF" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_60_158">
+                        <rect width="35.9076" height="45.4455" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </header>
+        <div class="operation">
+            <header>
+                <h3>Funcionamento</h3>
+            </header>
+            <ul>
+                <li>
+                    <h4>Manha:</h4>
+                    <p>8:00 - 12:00</p>
+                </li>
+                <li>
+                    <h4>Tarde:</h4>
+                    <p>12:00 - 13:00</p>
+                </li>
+                <li>
+                    <h4>Noite:</h4>
+                    <p>13:00 - 17:00</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <header>
+                <h3>Contatos</h3>
+            </header>
+            <ul class="contact-list">
+                <li>
+                    <a href="tel:+5561956825324">(61) 95682-5324</a>
+                </li>
+                <li>
+                    <a href="mailto:contato.@odontoclean.com.br">contato.@odontoclean.com.br</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="social-media">
+            <header>
+                <h3>Redes sociais</h3>
+            </header>
+            <ul class="social-list">
+                <li>
+                    <i class="fa-brands fa-square-youtube"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="scheduling">
+            <h4>Venha conhecer a nossa clínica!</h4>
+            <a href="#" class="btn-scheduling-here" target="_blank" rel="noopener noreferrer">
+                <i class="fa-regular fa-calendar-check"></i>
+                Vamos agendar</a>
+        </div>
+
+        <div class="dmc">
+            <p><strong>2022 © Odonto Clean</strong>. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
