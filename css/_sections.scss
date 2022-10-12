@@ -47,7 +47,7 @@ section {
             p {
               font-size: clamp(1.6rem, 1.0706rem + 1.4706vw, 2.2rem);
               line-height: 2.2rem;
-              opacity: 0.69;
+              @include opacityLow;
             }
           }
         }
@@ -106,6 +106,8 @@ section {
             }
           }
           div {
+            @include makeThisFlex(column);
+            gap: 1.6rem;
             &.show-more-list {
               display: none;
               &.active {
@@ -118,7 +120,7 @@ section {
             p {
               font-size: 1.6rem;
               line-height: 2.2rem;
-              opacity: 0.69;
+              @include opacityLow;
             }
           }
         }
@@ -160,7 +162,7 @@ section {
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.2rem;
-        opacity: 0.69;
+        @include opacityLow;
       }
 
       .swiper {
@@ -226,17 +228,34 @@ section {
   }
   &#scheduling {
     .wrapper {
-      @include makeThisGrid;
-      grid-template-areas: "header" "img";
+      @include makeThisGrid(auto); 
       header {
+        border-radius: 1.5rem 1.5rem 0 0;
         @include makeThisFlex(column);
-        grid-area: header;
         gap: 0.8rem;
         padding: 2.2rem;
         @include gradient;
         color: $nav-bg;
         align-items: flex-start;
-        border-radius: 1.5rem 1.5rem 0 0;
+
+        a{
+          
+          &.btn-scheduling {
+              margin-top: 1.6rem;
+              padding-block: 0.8rem;
+              padding-inline: 1.6rem;
+              @include makeThisFlex(center);
+              align-self: start;
+              gap: 0.8rem;
+              font-weight: 600;
+              font-size: 1.8rem;
+              line-height: 2.2rem;
+              color: $color-titles;
+              background: $nav-bg;
+              border-radius: 0.3rem;
+              border: none;
+            }
+        }
         h2 {
           font-weight: 700;
           font-size: 3.2rem;
@@ -247,18 +266,17 @@ section {
           font-weight: 400;
           font-size: 1.6rem;
           line-height: 2.2rem;
-          opacity: 0.69;
+          @include opacityLow;
         }
       }
-
-      .colum-b {
-        grid-area: "img";
-        border-radius: 0 1.5rem 0 1.5rem;
-      }
-      img {
-        width: 100%;
-        border-radius: 0 0rem 1.5rem 1.5rem;
-      }
+        .colum-b {
+           img {
+            width: 100%;
+            height: 100%;
+             margin-left: 0;
+            border-radius: 0 0 1.5rem 1.5rem;
+           }
+         }
     }
   }
   &#customer-reviews {
@@ -276,7 +294,7 @@ section {
       }
 
       p {
-        opacity: 0.69;
+        @include opacityLow;
       }
 
       ul {
@@ -338,8 +356,7 @@ section {
   }
   &#doubt {
     .wrapper {
-      @include makeThisGrid;
-      grid-template-areas: "A" "B";
+      @include makeThisGrid(auto);
       gap: 3rem;
 
       .col-b {
@@ -354,7 +371,7 @@ section {
           color: $color-titles;
         }
         p {
-          opacity: 0.69;
+          @include opacityLow;
           font-size: 1.6rem;
           line-height: 2.2rem;
         }
@@ -370,7 +387,8 @@ section {
             background: $slider-li-bg;
             @include makeThisFlex(column);
             align-items: initial;
-            filter: drop-shadow(0px 10px 25px rgba(55, 121, 215, 0.15));
+            filter: drop-shadow(0 1rem 2.5rem rgba(55, 121, 215, 0.15));
+            cursor: pointer;
             header {
               padding: 1.2rem;
               border-radius: 0.3rem;
@@ -378,7 +396,7 @@ section {
 
               @include makeThisFlex(center);
               justify-content: space-between;
-              transition: all .9s;
+              transition: all 0.9s;
 
               h3 {
                 font-size: clamp(1.2rem, 0.96rem + 0.6667vw, 1.6rem);
@@ -399,6 +417,7 @@ section {
                 color: $color-texts;
                 transform: rotate(-180deg);
                 background: rgba(242, 245, 250, 0.15);
+                border-radius: 100%;  
               }
 
               header {

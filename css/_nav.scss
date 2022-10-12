@@ -51,6 +51,10 @@ nav#navigation {
             filter: brightness(60%);
           }
         }
+
+        &:nth-last-child(1){
+          visibility: hidden;
+        }
       }
     }
   }

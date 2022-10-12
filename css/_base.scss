@@ -11,7 +11,7 @@ $header-bg: #dae9f2;
 $i-bg: #f2f5fa26;
 $span-background-color: #aad6f2;
 $color-border-button: #030e1f17;
-$color-border-dmc: #020e1f17;
+$color-border-dmc: rgba(2, 14, 31, 0.09);
 
 $color-titles: #020e1fd9;
 $color-texts: #ffffff;
@@ -34,9 +34,25 @@ $nav-height: max(8rem);
   box-shadow: 0 1rem 2.5rem #3779d740;
 }
 
-@mixin makeThisGrid() {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+@mixin opacityLow {
+  opacity: .69;
+}
+
+@mixin makeThisGrid($val) {
+  @if $val == auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+  } @else if $val == A-B {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A" "B";
+  } @else if $val == B-A {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "B" "A";
+  } @else {
+    display: grid;
+  }
 }
 
 @mixin makeThisFlex($val) {
@@ -80,5 +96,4 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Inter", sans-serif;
-  
 }

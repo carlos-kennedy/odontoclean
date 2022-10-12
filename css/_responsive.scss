@@ -1,0 +1,175 @@
+@media (min-width: 760px) {
+  section {
+    &#treatments {
+      .wrapper {
+        ul {
+          &.treatments-cards {
+            flex-flow: row;
+            gap: 1.6rem;
+
+            div {
+              @include makeThisFlex(column);
+              gap: 1.6rem;
+
+              &.show-more-list {
+                @include makeThisFlex(column);
+
+                &.active {
+                  @include makeThisFlex(column);
+                  gap: 1.6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &#scheduling {
+      .wrapper {
+        width: 80%;
+        margin-inline: auto;
+        header {
+          border-radius: 1.5rem 0 0 1.5rem;
+        }
+        .colum-b {
+          position: relative;
+          &::before {
+            content: "";
+            width: 9.1rem;
+            height: 11.5rem;
+            background: url(../assets/odonto-logo-render.svg) no-repeat center;
+            position: absolute;
+            bottom: 3rem;
+            left: -4.6rem;
+          }
+          img {
+            margin-left: -0.19rem;
+            border-radius: 0 1.5rem 1.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    &#navigation {
+      button {
+        &.hamburger {
+          display: none;
+          position: initial;
+        }
+      }
+      .menu {
+        width: 75%;
+        height: 100%;
+        @include makeThisFlex(center);
+        ul {
+          &.nav-list {
+            visibility: visible;
+            transform: none;
+            @include makeThisFlex(flex);
+            align-items: center;
+
+            gap: 3.2rem;
+            &.active {
+              position: initial;
+              transform: none;
+              z-index: initial;
+            }
+
+            li {
+              a {
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2.2rem;
+                color: $color-titles;
+                transition: all 0.9s;
+
+                &:hover {
+                  color: $main-color;
+                  // O font-weight vai ser quando ele estiver em active.
+                  // font-weight: 700;
+                }
+              }
+
+              &:nth-last-child(1) {
+                padding-left: 2.6rem;
+                border-left: 0.1rem solid $color-border-dmc;
+                visibility: visible;
+                a {
+                  gap: 1.1rem;
+                  font-size: 1.8rem;
+                  line-height: 2.2rem;
+                  color: $color-texts;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  header {
+    &#main-title {
+      @include makeThisFlex(flex);
+      gap: 6.3rem;
+      align-items: center;
+      .img-and-contact {
+        width: 100%;
+        order: 2;
+        position: relative;
+        img {
+          margin-bottom: 0;
+        }
+      }
+
+      .card-contact {
+        display: block;
+        background: $nav-bg;
+        padding-inline: 2.4rem;
+        padding-block: 1.2rem;
+        position: absolute;
+        left: -7.2rem;
+        bottom: 2.7rem;
+        z-index: 200;
+        @include makeBoxShadow;
+        border-radius: 3rem 0.5rem 0.5rem 0.5rem;
+        p {
+          font-size: 1.6rem;
+          line-height: 2.5rem;
+          @include opacityLow;
+        }
+        a {
+          font-weight: 700;
+          font-size: 1.6rem;
+          line-height: 2.5rem;
+          color: $color-titles;
+        }
+      }
+    }
+  }
+  footer {
+    background: $nav-bg;
+    .wrapper {
+      background: $nav-bg;
+      padding-bottom: 2.71rem;
+    }
+    .operation {
+      padding-right: 4.8rem;
+    }
+
+    .social-media {
+      padding-right: 24.4rem;
+    }
+    .scheduling {
+      padding-left: 6.5rem;
+      border-left: 0.1rem solid $color-border-dmc;
+      a {
+        align-self: flex-start;
+      }
+    }
+  }
+}

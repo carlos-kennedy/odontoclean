@@ -1,48 +1,33 @@
 footer {
-  padding-block: 5.4rem;
+  padding-top: 5.4rem;
+  padding-bottom: 1.6rem;
   padding-inline: 2.4rem;
-  @include makeThisFlex(column);
-  flex-flow: wrap;
-  gap: 3.2rem;
-  color: $color-titles;
-  background: $slider-li-bg;
-  header {
-    padding: 0;
-    background: 0;
-    text-align: center;
-    h3 {
-      font-size: 1.4rem;
-      line-height: 2.2rem;
-    }
-
-    path {
-      fill: $color-titles;
-    }
-  }
-  ul {
-    font-weight: 700;
-    font-size: 1.2rem;
-    line-height: 1.7rem;
-    opacity: 0.69;
-    text-align: center;
-
-    li {
-      @include makeThisFlex(center);
-      gap: 0.3rem;
-
-      i {
-        font-size: 2.4rem;
+  .wrapper {
+    @include makeThisFlex(column);
+    flex-flow: wrap;
+    gap: 3.2rem;
+    color: $color-titles;
+    background: $slider-li-bg;
+    header {
+      padding: 0;
+      background: 0;
+      text-align: center;
+      h3 {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
       }
 
-      p {
-        font-weight: 400;
+      path {
+        fill: $color-titles;
       }
     }
+    ul {
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      @include opacityLow;
+      text-align: center;
 
-    &.social-list {
-      @include makeThisFlex(center);
-      gap: 0.8rem;
-      opacity: 1;
       li {
         @include makeThisFlex(center);
         gap: 0.3rem;
@@ -55,41 +40,53 @@ footer {
           font-weight: 400;
         }
       }
-    }
-  }
 
-  .contact {
-    a {
-      font-weight: 400;
-      font-size: 1.2rem;
-      line-height: 1.7rem;
-      opacity: 0.69;
-      color: $color-titles;
+      &.social-list {
+        @include makeThisFlex(center);
+        gap: 0.8rem;
+        opacity: 1;
+        li {
+          @include makeThisFlex(center);
+          gap: 0.3rem;
+          a {
+            color: $color-titles;
+
+            i {
+              font-size: 2.4rem;
+            }
+          }
+          p {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .contact {
+      a {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        @include opacityLow;
+        color: $color-titles;
+      }
     }
   }
 
   .scheduling {
+    @include makeThisFlex(column);
+    padding-bottom: 1.6rem;
     h4 {
       font-size: 1.4rem;
       line-height: 2rem;
     }
     a {
       margin-top: 0.4rem;
-      @include makeThisFlex(center);
-      color: $color-texts;
-      @include gradient;
-      gap: 0.8rem;
-      border-radius: 0.3rem;
-      padding-inline: 1.6rem;
-      padding-block: 0.8rem;
-      font-weight: 600;
-      font-size: 1.4rem;
-      line-height: 2.2rem;
     }
   }
 
   .dmc {
-    border-top: .1rem solid $color-border-dmc;
+    border-top: 0.1rem solid $color-border-dmc;
     padding-top: 1.6rem;
     font-weight: 700;
     font-size: 1.4rem;
@@ -97,6 +94,7 @@ footer {
     text-align: center;
     p {
       font-weight: 400;
+      opacity: .69;
     }
   }
 }
