@@ -14,6 +14,7 @@ const btnShowMenu = () => {
   navUl.classList.toggle("active");
   navBtn.classList.toggle("is-active");
   logo.classList.toggle("active");
+
   if (html.style.overflow == "hidden") {
     html.style.overflow = "auto";
   } else {
@@ -21,7 +22,7 @@ const btnShowMenu = () => {
   }
 };
 
-const showItems = () => {
+const showRestOfItems = () => {
   showLi.classList.toggle("active");
 
   if (divShowMore.style.position == "initial") {
@@ -39,15 +40,11 @@ const showItems = () => {
   }
 };
 
-// Show items
-for (var i = 0; i < doubtItems.length; i++) {
+// A loop to find and select one of each li that has the .list-active class
+for (let i = 0; i < doubtItems.length; i++) {
   doubtItems[i].addEventListener("click", function () {
-    document.querySelector(".list-active")
-      ? document.querySelector(".list-active").classList.remove("list-active")
-      : "";
-    this.classList.add("list-active");
+    this.classList.toggle("list-active");
   });
 }
-
 navBtn.addEventListener("click", btnShowMenu);
-btnShowList.addEventListener("click", showItems);
+btnShowList.addEventListener("click", showRestOfItems);

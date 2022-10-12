@@ -1,5 +1,7 @@
 button {
   &.hamburger {
+    position: absolute;
+    right: 5%;
     z-index: 100;
     padding: 0.7rem;
     background: $hamburguer-icon-bg;
@@ -64,13 +66,13 @@ button {
     border: none;
   }
 
-  &.btn-show-text{
+  &.btn-show-text {
     font-size: 1.6rem;
-  background: #0c63df26;
-padding-inline: .7rem;
-padding-block: 0.6rem;
-border-radius: .3rem;
-border: none;
-color: $main-color;
-}
+    background: #0c63df26;
+    padding-inline: 0.7rem;
+    padding-block: 0.6rem;
+    border-radius: 0.3rem;
+    border: none;
+    color: $main-color;
+  }
 }

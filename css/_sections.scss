@@ -92,7 +92,8 @@ section {
                   width: 1.65rem;
                   height: 1.68rem;
                   background: url(../assets/check-solid.svg) no-repeat center;
-                  top: 0%;
+                  bottom: 3%;
+                  right: 6%;
                   position: absolute;
                 }
               }
@@ -377,6 +378,7 @@ section {
 
               @include makeThisFlex(center);
               justify-content: space-between;
+              transition: all .9s;
 
               h3 {
                 font-size: clamp(1.2rem, 0.96rem + 0.6667vw, 1.6rem);
