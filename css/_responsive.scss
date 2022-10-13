@@ -86,12 +86,13 @@
                 font-size: 2rem;
                 line-height: 2.2rem;
                 color: $color-titles;
-                transition: all 0.9s;
+                transition: all 0.7s;
+              }
 
-                &:hover {
+              &:hover {
+                a {
                   color: $main-color;
-                  // O font-weight vai ser quando ele estiver em active.
-                  // font-weight: 700;
+                  font-weight: 600;
                 }
               }
 
@@ -112,13 +113,15 @@
       }
     }
   }
-  header {
-    &#main-title {
+  section {
+    &#home {
       @include makeThisFlex(flex);
       gap: 6.3rem;
       align-items: center;
+      padding-bottom: 0;
       .img-and-contact {
         width: 100%;
+        height: 38rem;
         order: 2;
         position: relative;
         img {
@@ -134,7 +137,6 @@
         position: absolute;
         left: -7.2rem;
         bottom: 2.7rem;
-        z-index: 200;
         @include makeBoxShadow;
         border-radius: 3rem 0.5rem 0.5rem 0.5rem;
         p {

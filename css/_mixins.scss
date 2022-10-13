@@ -1,0 +1,73 @@
+@mixin gradient {
+    background: linear-gradient(225deg, #2098e3 0%, #0c63df 100%);
+}
+
+@mixin gradient-opacity-low {
+    background: linear-gradient(0deg, #f2f5fa 23.78%, #f2f5fa00 100%);
+}
+
+@mixin makeItRounder {
+    border-radius: 3.5rem 1rem 1rem 1rem;
+}
+
+@mixin makeBoxShadow {
+    box-shadow: 0 1rem 2.5rem #3779d740;
+}
+
+@mixin opacityLow {
+    opacity: .69;
+}
+
+@mixin makeThisGrid($val) {
+    @if $val ==auto {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+    }
+
+    @else if $val ==A-B {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "A" "B";
+    }
+
+    @else if $val ==B-A {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "B" "A";
+    }
+
+    @else {
+        display: grid;
+    }
+}
+
+@mixin makeThisFlex($val) {
+    @if $val ==center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @else if $val ==column {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    @else if $val ==between {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @else if $val ==start {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    @else {
+        display: flex;
+    }
+}

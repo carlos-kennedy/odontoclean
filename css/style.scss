@@ -1,10 +1,12 @@
-@import 'base';
-@import 'hamburger-settings';
-@import 'buttons';
-@import 'nav';
-@import 'header';
-@import 'main';
-@import 'sections';
-@import 'footer';
-@import 'responsive';
-@import '../_sass/hamburgers/hamburgers.scss';
+@import "mixins";
+@import "variables";
+@import "base";
+@import "hamburger-settings";
+@import "../_sass/hamburgers/hamburgers.scss";
+@import "buttons";
+@import "nav";
+@import "main";
+@import "sections";
+@import "footer";
+@import "responsive";
+
