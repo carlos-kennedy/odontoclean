@@ -8,18 +8,32 @@ const doubtItems = doubtList.getElementsByTagName("li");
 const divShowMore = document.querySelector(".show-more");
 const btnShowList = document.querySelector(".btn-show-more");
 
-// const btnShowTextsInDoubt = document.querySelector(".btn-show-text");
-
 const btnShowMenu = () => {
   navUl.classList.toggle("active");
   navBtn.classList.toggle("is-active");
   logo.classList.toggle("active");
 
-  if (html.style.overflow == "hidden") {
+  if (html.style.overflow === "hidden") {
     html.style.overflow = "auto";
+    navBtn.setAttribute("aria-expanded", "false");
   } else {
     html.style.overflow = "hidden";
+    navBtn.setAttribute("aria-expanded", "true");
   }
+
+  const closeMenu = document
+    .querySelector(".menu, li")
+    .addEventListener("click", function () {
+      navUl.classList.remove("active");
+      navBtn.classList.remove("is-active");
+      logo.classList.remove("active");
+
+      if (html.style.overflow === "hidden") {
+        html.style.overflow = "auto";
+        navBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  return closeMenu;
 };
 
 const showRestOfItems = () => {
