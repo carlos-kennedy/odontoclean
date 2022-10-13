@@ -5,6 +5,4 @@ new Swiper(".mySwiper", {
     el: ".swiper-scrollbar",
     hide: false,
   },
-  // freeMode: true,
-  loop: false,
 });
