@@ -1,5 +1,5 @@
 <div align="center">
-<h1>  👨🏻‍⚕️ Odonto clean 😁  </h1>
+<h1> 😁 Odonto clean 😁  </h1>
 <h2> Site sobre a clínica <a href="https://carlos-kennedy.github.io/odontoclean/"> odontoclean </a> </h2>
 <img src="https://i.imgur.com/fpjZd2Q.png" alt="imagem-projeto-odontoclean-tela-desktop" />
 <h3> 📱 Formato para tablet e telefone </h3>
