@@ -55,10 +55,11 @@ const showRestOfItems = () => {
 };
 
 // A loop to find and select one of each li that has the .list-active class
-for (let i = 0; i < doubtItems.length; i++) {
-  doubtItems[i].addEventListener("click", function () {
-    this.classList.toggle("list-active");
+for (const item of doubtItems) {
+  item.addEventListener("click", () => {
+    item.classList.toggle("list-active");
   });
 }
+
 navBtn.addEventListener("click", btnShowMenu);
 btnShowList.addEventListener("click", showRestOfItems);
