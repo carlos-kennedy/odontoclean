@@ -117,16 +117,24 @@
   }
   section {
     &#home {
-      @include makeThisFlex(flex);
+      @include makeThisFlex(between);
+      
       gap: 6.3rem;
       align-items: center;
       padding-bottom: 0;
+
+      h1{
+        max-width: 47.8rem;
+      }
+
       .img-and-contact {
-        width: 80%;
+        width: auto;
         height: 38rem;
         order: 2;
         position: relative;
         img {
+          width: 69.5rem;
+          height: auto;
           margin-bottom: 0;
         }
       }
